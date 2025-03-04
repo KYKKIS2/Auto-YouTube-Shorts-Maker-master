@@ -193,7 +193,7 @@ for i in range(100):
     transcriber = VideoTranscriber(model_path, video_path)
     transcriber.extract_audio()
     transcriber.transcribe_video()
-    transcriber.create_video(output_video_path,audio_clip.duration,background_music_path="test_videos\WiiMusic.mp3")
+    transcriber.create_video(output_video_path,audio_clip.duration,background_music_path="PathToYourMP3FileForBackgroundMusic")
 
     src =  "test_videos/"+title+".mp4"
     shutil.copy(src,"Tobeuploaded")
@@ -205,12 +205,12 @@ for i in range(100):
 
     file_path = "Tobeuploaded/" + title + ".mp4"
     # Set up the connection parameters
-    hostname = 'ec2-13-50-17-236.eu-north-1.compute.amazonaws.com'
+    hostname = 'Your-Amazon-AWS-PythonServer.compute.amazonaws.com'
     port = 22
     username = 'ubuntu'
     local_file = file_path
     remote_path = '/home/ubuntu/YTuploader/Tobeuploaded/' + title + ".mp4"
-    key_file_path = 'Testi1.pem'
+    key_file_path = 'KeyOfAWSserver.pem'
 
     # Initialize the SSH client
     client = paramiko.SSHClient()
