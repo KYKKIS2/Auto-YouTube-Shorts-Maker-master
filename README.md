@@ -41,3 +41,8 @@ Ensure you have the following installed:
 2. Install requirements.txt:  
    ```bash
    pip install -r requirements.txt
+2. Run shorts.py:  
+   ```bash
+   python shorts.py
+
+**If you encounter any errors regarding path files and configs just edit the scripts according to your own file paths (API keys of reddit,elevenLabs,AWS e.t.c).**
