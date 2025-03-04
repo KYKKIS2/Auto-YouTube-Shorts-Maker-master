@@ -1,39 +1,3 @@
-'''from elevenlabs import generate, play, Voice, VoiceSettings, save
-
-audio = generate(
-  text="The Eiffel Tower can be 15 cm taller during the summer. Due to thermal expansion, materials tend to expand when heated.",
-  voice=Voice(
-        voice_id='pNInz6obpgDQGcFmaJgB',
-        settings=VoiceSettings(stability=0.69, similarity_boost=1.0, style=0.0, use_speaker_boost=True)
-    ),
-  model="eleven_multilingual_v2"
-)
-
-play(audio)
-save(audio,'test.wav')'''
-'''
-title = "Testing1"
-description = "#funnyvideos #funnyvideosdaily #funnyvideosclips #pubgfunnyvideos #btsfunnyvideos #punjabifunnyvideos #telugufunnyvideos #tiktokfunnyvideos #funnyvideosv #indianfunnyvideos #leagueoflegendsfunnyvideos #funnyvideosclip #kannadafunnyvideos #afghanfunnyvideos #marathifunnyvideos #kevinhartfunnyvideos #dogfunnyvideos #bestfunnyvideos #funnyvideos2018 #funnyvideoshiphop #funnyvideos2019 #hindifunnyvideos #funnyvideosandmemes_ #naijafunnyvideos #funnyvideoslel #tamilfunnyvideos #desifunnyvideos #funnyvideosever #funnyvideostags #pakistanifunnyvideos #funnyvideoswithsuaven2g #blackfunnyvideos #funnyvideosmemes #funnyvideosinhindi #funnyvideoshd #kidsfunnyvideos #funnyvideos2020 #funnyvideosdownload #fortnitefunnyvideos  #funnyvideos2017"
-
-from youtube_upload.client import YoutubeUploader
-uploader = YoutubeUploader(secrets_file_path="client_secret.json")
-
-uploader.authenticate()
-
-# Video options
-options = {
-    "title" : title, # The video title
-    "description" : description, # The video description
-    "tags" : ["funny jokes","try not to laugh","funny joke story","jokes,joke","jk","laugh","funny videos"],
-    "categoryId" : "22",
-    "privacyStatus" : "private", # Video privacy. Can either be "public", "private", or "unlisted"
-    "kids" : False, # Specifies if the Video if for kids or not. Defaults to False.
-}
-
-file_path = "test_videos/" + title + ".mp4"
-
-# upload video
-uploader.upload(file_path, options) '''
 import os,re,string,json
 
 def clean_joke(title, selftext):
