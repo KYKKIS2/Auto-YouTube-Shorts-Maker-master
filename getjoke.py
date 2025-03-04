@@ -149,7 +149,7 @@ def get_random_joke(client_id, secret, appname, username, password, upvote_thres
 
 
 if __name__ == "__main__":
-    # Code you want to run only when executing test.py directly
+    # Code you want to run only when executing getjoke.py directly
     # For example, calling get_random_joke and printing the result
 
     # Replace the following variables with your Reddit app details and user credentials
