@@ -1,8 +1,43 @@
-# Auto-YouTube-Shorts-Maker-master
-This Python script streamlines the creation of YouTube Shorts by retrieving a random joke from the r/Jokes subreddit and generating a video in which an AI narrates the joke from ElevenLabs.
+# 🎥 Auto-YouTube-Shorts-Maker
 
-You can have a gameplay video of a game or something in the background (make sure it is a long video, because it uses a random part of the video so you can have multiple different shorts.) while
-the AI narrates the joke.
+## Overview  
+**Auto-YouTube-Shorts-Maker** is a Python-based automation tool designed to create YouTube Shorts by retrieving random jokes from the **r/Jokes** subreddit and generating videos where an AI, powered by **ElevenLabs**, narrates the jokes.
 
-I've also implemented this python code to upload the file automatically to an AWS server automatically, which the AWS server uploads a video every 8 hours. You can basically automate the whole
-processing of creating a Short jokes video with an AI narrator from elevenLabs.
+Additionally, this script supports **automated uploads to an AWS server**, which schedules video uploads every **8 hours**, allowing full automation of the content creation process.
+
+---
+
+## Features  
+- ✅ **Automated Joke Retrieval** – Fetches random jokes from the **r/Jokes** subreddit.  
+- ✅ **AI Voice Narration** – Uses **ElevenLabs** to generate high-quality AI voiceovers.  
+- ✅ **Dynamic Background Videos** – Supports gameplay or any long video as a background. It selects **random segments**, enabling unique shorts from a single video source. It also adds music background if you want. 
+- ✅ **Duplicate Detection** – Ensures that the same joke is not used in multiple videos.  
+- ✅ **AWS Auto Uploading** – Automatically transfers generated videos to an AWS server, which schedules uploads every 8 hours.  
+
+---
+
+## How It Works  
+1. **Fetch a Joke** – The script retrieves a random joke from **r/Jokes**.  
+2. **Generate AI Narration** – The joke is converted into speech using **ElevenLabs**.  
+3. **Select a Background Video** – A random portion of a pre-existing long video (gameplay, stock footage, etc.) is selected.  
+4. **Create the YouTube Short** – The video is rendered with the AI-narrated joke.  
+5. **Upload to AWS** – The script automatically uploads the video to an AWS server, which then schedules it for YouTube every 8 hours.  
+6. **Check for Duplicates** – Before creating a new video, it verifies whether the joke has already been used.  
+
+---
+
+## Installation & Setup  
+
+### Prerequisites  
+Ensure you have the following installed:  
+- Python 3.x  
+- Required dependencies (install using `pip`)  
+
+### Installation  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-repo/Auto-YouTube-Shorts-Maker.git
+   cd Auto-YouTube-Shorts-Maker
+2. Install requirements.txt:  
+   ```bash
+   pip install -r requirements.txt
