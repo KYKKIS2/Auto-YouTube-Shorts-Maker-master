@@ -153,7 +153,7 @@ if __name__ == "__main__":
     # For example, calling get_random_joke and printing the result
 
     # Replace the following variables with your Reddit app details and user credentials
-    with open(r'C:\Users\kykki\Documents\OneDrive\Documents\Youtube\Auto-YouTube-Shorts-Maker-master\reddit-downloader-main\config.json', 'r') as f:
+    with open(r'TheLocationOfYourConfigFileOfYourRedditApp\config.json', 'r') as f:
             CONFIG = json.load(f)
 
     CLIENT_ID = CONFIG['client_id']
