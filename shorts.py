@@ -35,7 +35,7 @@ for i in range(100):
         cleaned_filename = re.sub(f'[^{re.escape(valid_chars)}]', '_', filename)
         return cleaned_filename
 
-    with open(r'C:\Users\kykki\Documents\OneDrive\Documents\Youtube\Auto-YouTube-Shorts-Maker-master\reddit-downloader-main\config.json', 'r') as f:
+    with open(r'LocationToConfig\config.json', 'r') as f:
             CONFIG = json.load(f)
 
     CLIENT_ID = CONFIG['client_id']
@@ -49,6 +49,8 @@ for i in range(100):
     # Ask for video info
     #title = input("\nEnter the name of the video >  ")
     #option = input('Do you want AI to generate content? (yes/no) >  ')
+    #At first i used this python script to generate content through AI, now i just set the variable option to "no" so i don't have to type it all the time.
+    #Also this python script uploads the video automatically to an AWS server which uploads a .mp4 file to YouTube every 8 hours.
     description = "#funnyvideos #funnyvideosdaily #funnyvideosclips #pubgfunnyvideos #btsfunnyvideos #punjabifunnyvideos #telugufunnyvideos #tiktokfunnyvideos #funnyvideosv #indianfunnyvideos #leagueoflegendsfunnyvideos #funnyvideosclip #kannadafunnyvideos #afghanfunnyvideos #marathifunnyvideos #kevinhartfunnyvideos #dogfunnyvideos #bestfunnyvideos #funnyvideos2018 #funnyvideoshiphop #funnyvideos2019 #hindifunnyvideos #funnyvideosandmemes_ #naijafunnyvideos #funnyvideoslel #tamilfunnyvideos #desifunnyvideos #funnyvideosever #funnyvideostags #pakistanifunnyvideos #funnyvideoswithsuaven2g #blackfunnyvideos #funnyvideosmemes #funnyvideosinhindi #funnyvideoshd #kidsfunnyvideos #funnyvideos2020 #funnyvideosdownload #fortnitefunnyvideos  #funnyvideos2017"
     option = 'no'
 
