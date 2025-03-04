@@ -59,8 +59,6 @@ import requests
 import json
 import random,html
 
-# Rest of your code...
-
 def save_jokes(jokes_list, filepath="saved_jokes.json"):
     with open(filepath, 'w') as file:
         json.dump(jokes_list, file)
