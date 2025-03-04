@@ -13,6 +13,14 @@ import shutil
 from getjoke import get_random_joke
 import json,string,re,time
 
+#You can also add as many API keys as you want from ElevenLabs and when one is out of characters because of API limits,
+#it can iterate to the next API key. 
+#Example of .env file:
+#ELEVEN_API_KEY_1="" #user@g.
+#ELEVEN_API_KEY_2="" #user@g.
+#ELEVEN_API_KEY_3="" #user@g.
+#ELEVEN_API_KEY_4="" #user@
+
 load_dotenv()
 api_keys = [os.getenv(f'ELEVEN_API_KEY_{i}') for i in range(1, 6)]  # Adjust the range as needed for your keys
 current_key_index = 0
