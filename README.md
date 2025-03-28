@@ -10,7 +10,8 @@ Additionally, this script supports **automated uploads to an AWS server**, which
 ## Features  
 - ✅ **Automated Joke Retrieval** – Fetches random jokes from the **r/Jokes** subreddit.  
 - ✅ **AI Voice Narration** – Uses **ElevenLabs** to generate high-quality AI voiceovers.  
-- ✅ **Dynamic Background Videos** – Supports gameplay or any long video as a background. It selects **random segments**, enabling unique shorts from a single video source. It also adds music background if you want. 
+-  **Dynamic Background Videos** – Supports gameplay or any long video as a background. It selects **random segments**, enabling unique shorts from a single video source. It also adds music background if you want. 
+- ✅ **Auto-subtitle generation** - Automatically detects words and generates subtitles on the screen for better engagement for the video.
 - ✅ **Duplicate Detection** – Ensures that the same joke is not used in multiple videos.  
 - ✅ **AWS Auto Uploading** – Automatically transfers generated videos to an AWS server, which you can setup for scheduling uploads every X hours/days/minutes you want.  
 
